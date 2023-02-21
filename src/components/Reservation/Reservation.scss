@@ -1,0 +1,186 @@
+.Reservation-container {
+    background-image: url('https://jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/brooke-lark-385504.jpg');
+    background-size: cover;
+    padding: 13% 5%;
+}
+
+.reservation-sub-container {
+    padding: 10%;
+    border-radius: 10px;
+    background-color: white;
+
+}
+@keyframes slideToUp {
+    from {
+        transform: translateY(10%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.reservation-title-container {
+    // border: 1px solid red;
+
+    .reservation-title {
+        font-family: "Cormorant Garamond";
+        color: #3e3e3e;
+        font-weight: 700;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .ant-divider .ant-divider-inner-text {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .reservation-matter {
+        text-align: center;
+        color: #a6a6a6;
+        font-size: 14px;
+        font-weight: 300;
+
+        .divider {
+            width: 90%;
+        }
+    }
+}
+
+.reservation-form-container {
+    // border: 1px solid red;
+    // padding-top: 20%;
+    padding: 20% 5%;
+
+    .ant-form-item {
+        border-radius: none;
+    }
+
+    .ant-form-item-label {
+        font-style: italic;
+        padding-left: 10%;
+        padding-bottom: 0%;
+    }
+
+    .ant-form-item .ant-form-item-label>label {
+        color: #8d8d8d;
+    }
+
+    .ant-input {
+        border: none;
+        border-bottom: 1px solid #e3e3e3;
+        border-radius: none;
+        padding: 0%;
+
+    }
+
+    .ant-form-item .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        color: #a6a6a6;
+    }
+
+    .ant-picker {
+        border: none;
+        border-bottom: 1px solid #e3e3e3;
+        width: 100%;
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: none;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    .submit-button-container {
+        // border: 1px solid red;
+        padding-top: 7%;
+        padding-bottom: 7%;
+
+        .submit-button {
+            background-color: transparent;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            border: none;
+            color: #646464;
+            font-family: 'Montserrat';
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .Reservation-container {
+        padding: 10%;
+    }
+
+    .reservation-form-container {
+        padding: 0%;
+        padding-top: 10%;
+
+        .ant-form-item-label {
+            padding-left: 5%;
+        }
+
+        .ant-input {
+            border: 1px solid #e3e3e3;
+            width: 90%;
+            border-top: none;
+            border-right: none;
+            border-left-color: white;
+            border-radius: none;
+        }
+
+        .ant-picker {
+            width: 90%;
+        }
+
+        .ant-select.ant-select-in-form-item {
+            width: 90%;
+            border: none;
+            border-radius: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width:1024px) {
+   
+    .reservation-title-container {
+        .reservation-matter {
+            .divider {
+                .brake {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .reservation-form-container {
+        .submit-button-container {
+       
+            padding-bottom: 0%;}
+        padding-bottom: 0%;
+
+        .names-container {
+            display: flex;
+
+            .ant-form-item {
+                width: 50%;
+            }
+        }
+
+        .contact-container {
+            display: flex;
+
+            .ant-form-item {
+                width: 50%;
+            }
+        }
+
+        .extra-container {
+            // border: 1px solid red;
+            display: flex;
+
+            .ant-form-item {
+                width: 33%;
+            }
+        }
+    }
+}

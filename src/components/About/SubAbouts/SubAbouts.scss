@@ -1,0 +1,66 @@
+.SubAbouts-container {
+    background: url('https://jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/Always-fresh2.jpg');
+    background-size: cover;
+    // border: 1px solid red;
+    padding: 5%;
+
+    .each-subabout-container {
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .each-image-container {
+            // border: 1px solid blue;
+
+            .each-image {
+                width: 100%;   
+            }
+
+        }
+
+        .each-header {
+            font-family: 'Cormorant Garamond';
+            font-style: italic;
+            margin: 0%;
+
+            .light-header {
+                font-weight: 400;
+            }
+        }
+
+        .each-matter {
+            width: 80%;
+
+            color: #646464;
+            // font-size: 14px;
+
+        }
+
+
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .SubAbouts-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .each-subabout-container {
+            width: 30%;
+            box-sizing: border-box;
+            margin: 1.5%;
+
+            .each-image-container {
+                // border: 1px solid blue;
+
+                .each-image {
+                    width: 85%;
+                }
+
+            }
+        }
+    }
+}

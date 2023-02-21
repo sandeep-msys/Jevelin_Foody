@@ -1,0 +1,237 @@
+.Menu-container {
+    background-image: url('https://jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/brooke-lark-385490.jpg');
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30% 0%;
+
+    .menu-inner-container {
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        width: 80%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: white;
+        border-radius: 15px;
+
+
+        .menu-title-container {
+            padding: 15% 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            .menu-title-heading {
+                text-align: center;
+                line-height: 55px;
+                font-family: "Cormorant Garamond";
+                color: #3e3e3e;
+                font-size: 40px;
+                font-weight: 700;
+                width: 65%;
+                // border: 1px solid red;
+            }
+
+            .menu-title-matter {
+                font-family: 'Montserrat';
+                color: #a6a6a6;
+                font-size: 14px;
+                margin: 0%;
+            }
+        }
+
+        .menu-dish-container {
+            .menu-starters-container {
+                .menu-starters-heading {
+                    font-family: 'Cormorant Garamond';
+                    font-weight: 400;
+                    font-size: 26px;
+                    color: #ff7417;
+
+                }
+
+                .each-menu-starters-container {
+                    // border: 1px solid red;
+                    padding-bottom: 8%;
+
+                    .menu-starters-name {
+                        color: #000000;
+                        font-size: 16px;
+                        font-family: "Montserrat";
+                        font-weight: 300;
+                    }
+
+                    .menu-starters-rate {
+                        color: #000000;
+                        font-size: 16px;
+                        font-family: "Montserrat";
+                        font-weight: 300;
+                    }
+
+                    .divider {
+                        margin: 0%;
+
+                    }
+
+                    .menu-starters-matter {
+                        font-style: italic;
+
+                        color: #000000;
+                        font-size: 16px;
+                        font-family: "Montserrat";
+                        font-weight: 300;
+                    }
+                }
+
+            }
+        }
+
+        .menu-button-container {
+            // border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15%;
+
+            .menu-button {
+                font-weight: 600;
+                height: 55px;
+                width: 65%;
+                font-size: 11px;
+                color: #676767;
+                border: 1px solid #676767;
+                border-radius: 32px;
+                padding: 2% 4%;
+                background-color: transparent;
+            }
+        }
+
+    }
+
+    @keyframes slideToTop {
+        from {
+            transform: translateY(10%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    .Menu-container {
+        padding: 10% 0%;
+
+        .menu-inner-container {
+            // margin: 6% 10%;
+            padding: 5%;
+
+            .menu-title-container {
+                padding-top: 8%;
+
+                .menu-title-heading {
+                    // border: 1px solid red;
+                    width: 90%;
+                    margin-bottom: 1%;
+                }
+            }
+
+            .menu-dish-container {
+                .menu-starters-container {
+                    .each-menu-starters-container {
+                        // border: 1px solid red;
+                        padding-bottom: 4%;
+                    }
+                }
+
+                .menu-button-container {
+                    .menu-button {
+                        width: 37%;
+                    }
+                }
+
+            }
+
+            .menu-button-container {
+
+                // border: 1px solid red;
+                .menu-button {
+                    width: 35%;
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .Menu-container {
+        .menu-inner-container {}
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .Menu-container {
+        .menu-inner-container {
+            .menu-title-container {
+                padding-bottom: 7%;
+
+                .menu-title-heading {
+                    margin-top: 2%;
+                }
+            }
+
+            .menu-dish-container {
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .menu-starters-container {
+                    width: 45%;
+
+                    .each-menu-starters-container {
+                        .menu-starters-matter {
+                            width: 86%;
+                            font-size: 14px;
+                            line-height: 25px;
+                            // border: 1px solid red;
+                        }
+
+                        height: 180px;
+
+                        .each-menu-title-container {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .menu-starters-name {
+                                width: 40%;
+                                line-height: 30px;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+            .menu-button-container {
+                margin: 1%;
+
+                // border: 1px solid blue;
+                .menu-button {
+                    width: 20%;
+                    padding: 1% 3%;
+                }
+            }
+        }
+    }
+
+
+}

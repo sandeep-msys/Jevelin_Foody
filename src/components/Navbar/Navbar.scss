@@ -1,0 +1,123 @@
+
+
+.navbar-with-background {
+    background: url('https://i2.wp.com/dev.babybargains.com/wp-content/uploads/2020/08/Best-Sugar-Free-Pumpkin-Spice-Syrup.jpeg?resize=1248&w=1248');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    z-index: 1;
+    .navbar-menu-icons {
+        color: white;
+    }
+    .each-menu-option {
+        color: white;
+    }
+    .menu-item{
+        text-decoration: none;
+        color: white;
+    }
+    .active {
+        text-decoration: underline;
+    }
+}
+
+.navbar-with-white {
+    top: -10px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    width: 100%;
+    border: 1px solid #e3e3e3;
+
+    .navbar-menu-icons {
+        color: black;
+    }
+
+    .each-menu-option {
+        color: black;
+    }
+    .menu-item{
+        text-decoration: none;
+        color: black;
+    }
+    .active {
+        text-decoration: underline;
+    }
+}
+
+
+.navbar-menu-icons {
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+
+}
+
+.hamburger-icon {
+    font-size: 25px;
+
+}
+
+.navbar-menu-options-container {
+    display: none;
+}
+
+
+@media only screen and (min-width:768px) {
+    .navbar-with-white {
+        height: 14vh;
+        padding: 0% 5%;
+    }
+
+    .navbar-with-background {
+        height: 14vh;
+        padding: 0% 5%;
+    }
+}
+
+@media only screen and (min-width:1366px) {
+
+    .navbar-menu-icons {
+        width: 55%;
+
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .navbar-menu-options-container {
+        width: 100%;
+        display: block;
+        // border: 1px solid yellow;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+    }
+
+    .each-menu-option {
+        // border: 1px solid blue;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: "Montserrat";
+    }
+
+    .navbar-social-icons-container {
+        // border: 1px solid red;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+
+        .navbar-social-icon {
+            // border: 1px solid red;
+            font-size: 23px;
+        }
+    }
+}

@@ -1,0 +1,260 @@
+.Welcome-container {
+    margin: 3% 0%;
+
+    .slide-container {
+        width: 100%;
+      
+       animation-timing-function: linear;
+        animation-iteration-count: 1;
+
+        .image-container {
+            visibility: hidden;
+            width: 100%;
+            height: 35vh;
+
+            .image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+
+        @keyframes slideToRight {
+            from {
+                transform: translateX(-30%);
+              }
+              to {
+                transform:translateX(0%);
+              }
+        }
+
+        // .slideToLeft {
+        //     animation-name: slideToLeft;
+        //     animation-duration: 5s;
+        //     animation-iteration-count: infinite;
+        //     animation-delay: 5s;
+        // }
+
+        @keyframes slideToLeft {
+            from {
+                transform: translateX(30%);
+              }
+              to {
+                transform:translateX(0%);
+              }
+        }
+
+        .matter-container {
+            box-sizing: border-box;
+            // border: 1px solid red;
+
+            .welcome-background-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0%;
+
+                .welcome-background {
+                    font-family: "Cormorant Garamond";
+                    font-size: 400px;
+                    text-align: center;
+                    color: #f0f0f0;
+                    line-height: 200px;
+                }
+            }
+
+            .welcome-inner-matter {
+                // border: 1px solid red;
+
+                .welcome-note {
+                    color: #3e3e3e;
+                    font-size: 40px;
+                    font-style: italic;
+                    font-weight: 200;
+                    font-family: "Cormorant Garamond";
+                }
+
+                .welcome-matter {
+                    font-family: "Montserrat";
+                    color: #646464;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+
+                .welcome-about {
+                    font-size: 11px;
+                    background-color: rgba(255, 255, 255, 0);
+                    color: #4b4b4b;
+                    font-weight: 700;
+                    text-align: center;
+                    cursor: pointer;
+                    padding-top: 7%;
+                }
+            }
+
+            .chef-background-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0%;
+
+                .chef-background {
+                    font-family: "Cormorant Garamond";
+                    font-size: 300px;
+                    margin-top: 5%;
+                    text-align: center;
+                    color: #f0f0f0;
+                    line-height: 200px;
+                }
+            }
+
+            .chef-inner-matter {
+                .chef-note {
+                    color: #3e3e3e;
+                    font-size: 40px;
+                    font-style: italic;
+                    font-weight: 200;
+                    font-family: "Cormorant Garamond";
+                }
+
+                .chef-matter {
+                    font-family: "Montserrat";
+                    color: #646464;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+
+                .chef-about {
+                    font-size: 11px;
+                    background-color: rgba(255, 255, 255, 0);
+                    color: #4b4b4b;
+                    font-weight: 700;
+                    text-align: center;
+                    cursor: pointer;
+                    padding-top: 7%;
+
+                }
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (min-width:425px) {
+    .Welcome-container {
+        .slide-container {
+            .image-container {
+                width: 100%;
+                height: 28vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .Welcome-container {
+        .slide-container {
+            .matter-container {
+                padding-bottom: 5%;
+
+                .welcome-inner-matter {
+                    // border: 1px solid blue;
+                    padding: 0% 25%;
+                }
+
+                .chef-inner-matter {
+                    // border: 1px solid blue;
+                    padding: 0% 23%;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .Welcome-container {
+
+        .slide-container {
+            padding: 5% 0%;
+            display: flex;
+
+            .image-container {
+                width: 50%;
+
+                .image {
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+
+            .matter-container {
+                width: 50%;
+                height: 100vh;
+                text-align: left;
+                // border: 1px solid red;
+                padding: 10%;
+
+                .welcome-inner-matter {
+                    padding: 0%;
+
+                    .welcome-about {
+                        // border: 1px solid red;
+                        text-align: left;
+                        margin-top: 15%;
+                    }
+                }
+
+                .chef-inner-matter {
+                    padding: 0%;
+
+                    .chef-about {
+                        // border: 1px solid red;
+                        text-align: right;
+                        margin-top: 15%;
+                    }
+
+                    .chef-note {
+                        text-align: right;
+
+                    }
+
+                    .chef-matter {
+                        text-align: right;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .Welcome-container {
+        .slide-container {
+            .matter-container {
+                padding-top: 2%;
+
+                .welcome-inner-matter {
+                    .welcome-about {
+                        padding: 0%;
+                    }
+                }
+
+                .chef-inner-matter {
+                    .chef-about {
+                        padding: 0%;
+                    }
+                }
+            }
+        }
+    }
+}

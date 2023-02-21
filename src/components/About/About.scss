@@ -1,0 +1,149 @@
+.About-container {
+    overflow: hidden;
+
+    .about-header-container {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 10%;
+
+        .about-header {
+            margin: 0%;
+            font-size: 1em;
+            width: 80%;
+            font-family: Cormorant Garamond;
+            color: #3e3e3e;
+        }
+
+        .about-matter {
+            margin: 0%;
+
+            font-size: 1.2em;
+            color: #a6a6a6;
+            font-family: Monsterrat;
+        }
+    }
+}
+
+
+.SubAbouts-container {
+    background: url('https://jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/Always-fresh2.jpg');
+    background-size: cover;
+    // border: 1px solid red;
+    padding: 5%;
+
+    .each-subabout-container {
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // animation-name: slideLeft;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+
+        .each-image-container {
+            // border: 1px solid blue;
+
+            .each-image {
+                width: 100%;
+            }
+
+        }
+
+        .each-header {
+            font-family: 'Cormorant Garamond';
+            font-style: italic;
+            margin: 0%;
+
+            .light-header {
+                font-weight: 400;
+            }
+        }
+
+        .each-matter {
+            width: 80%;
+
+            color: #646464;
+            // font-size: 14px;
+
+        }
+
+
+    }
+
+    .slideRight {
+        animation-name: slideRight;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes slideRight {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .slideLeft {
+        animation-name: slideLeft;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes slideLeft {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    .slideUp {
+        animation-name: slideUp;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .SubAbouts-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .each-subabout-container {
+            width: 30%;
+            box-sizing: border-box;
+            margin: 1.5%;
+
+            .each-image-container {
+                // border: 1px solid blue;
+
+                .each-image {
+                    width: 85%;
+                }
+
+            }
+        }
+    }
+}

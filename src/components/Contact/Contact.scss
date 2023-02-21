@@ -1,0 +1,173 @@
+.Contact-container {
+    padding: 25% 1%;
+}
+
+.contact-details-container {
+    visibility: hidden;
+    text-align: center;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    .contact-title {
+        padding-bottom: 5%;
+        width: 80%;
+        margin: auto;
+        font-style: italic;
+        font-weight: 200;
+        font-size: 26px;
+        font-family: "Cormorant Garamond";
+        color: #3e3e3e;
+    }
+}
+
+@keyframes slideToEnd {
+    from {
+        transform: translateX(-10%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideToStart {
+    from {
+        transform: translateX(10%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.contact-time-container {
+    // border: 1px solid blue;
+    margin-top: 10%;
+
+    .day {
+        font-weight: 700;
+        color: #292929;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 14px;
+        margin-bottom: 1%;
+    }
+
+    .time {
+        font-weight: 300;
+        color: #292929;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 14px;
+        margin-bottom: 1%;
+    }
+
+    .address {
+        color: #727171;
+        font-weight: 700;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 14px;
+        margin-bottom: 1%;
+        padding-top: 10%;
+    }
+}
+
+.address-container {
+    padding-bottom: 25%;
+}
+
+.contact-map-container {
+    visibility: hidden;
+    height: 65vh;
+    margin-top: 5%;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+
+@media only screen and (min-width:425px) {
+    .Contact-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .Contact-container {
+        padding-top: 15%;
+    }
+
+    .contact-title {
+        // border: 1px solid red;
+        padding: 0% 25%;
+        width: 20%;
+    }
+
+    .ant-divider-horizontal {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        min-width: 30%;
+        width: 70%;
+    }
+
+    .contact-time-container .address {
+        padding: 0%;
+        padding-top: 3%;
+    }
+
+    .contact-time-container {
+        padding-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .Contact-container {
+        padding-top: 5%;
+        padding: 3%;
+        display: flex;
+
+        .contact-details-container {
+            width: 50%;
+            height: 100vh;
+            // padding-top: 10%;
+            // padding-left: 5%;
+            // padding-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+          .contact-title{
+            margin: 0%;
+          }
+        }
+
+        .contact-time-container {
+            width: 80%;
+            // border: 1px solid green;
+            padding-bottom: 0%;
+        }
+
+        .contact-map-container {
+            width: 50%;
+            height: 100vh;
+            margin: 0%;
+        }
+
+        .each-time {
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .contact-title {
+            width: 90%;
+        }
+
+        .add {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

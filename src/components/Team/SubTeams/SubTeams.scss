@@ -1,0 +1,136 @@
+.SubTeams-container {
+    .each-sub-team {
+        // border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0%;
+        .team-matter-container {
+            width: 80%;
+            // border: 1px solid red;
+            text-align: center;
+
+            .team-name {
+                font-family: "Cormorant Garamond";
+                color: #3e3e3e;
+                font-size: 16px;
+                font-weight: 700;
+                margin-top: 5px;
+            }
+
+            .team-designation {
+                font-family: "Montserrat";
+                color: #a6a6a6;
+                word-wrap: break-word;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .team-matter {
+                font-family: "Montserrat";
+                color: #646464;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (min-width:425px) {
+    .SubTeams-container {
+        .each-sub-team {
+            .team-matter-container {
+                width: 60%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    .SubTeams-container {
+        .each-sub-team {
+            .team-image-container {
+                width: 70%;
+
+                .team-image {
+                    border-top-left-radius: 25px;
+                    border-top-right-radius: 25px;
+                    width: 100%;
+                    height: 80vh;
+                    object-fit: cover;
+                }
+            }
+
+            .team-matter-container {
+                width: 70%;
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .SubTeams-container {
+        width: 100%;
+        // border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .each-sub-team {
+            width: 23%;
+
+            .team-image-container {
+                width: 90%;
+
+                .team-image {
+                    border-radius: 15px;
+                    width: 80%;
+                    height: 35vh;
+                }
+            }
+
+            .team-matter-container {
+               
+                .team-designation {
+                    font-size: 26px;
+                }
+
+               
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .SubTeams-container {
+        .each-sub-team {
+            .team-image-container {
+                width: 90%;
+
+                .team-image {
+                    border-radius: 15px;
+                    width: 85%;
+                    height: 50vh;
+                }
+            }
+
+            .team-matter-container {
+.team-name{
+    margin-top: 12px;
+}
+                .team-designation {
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+}

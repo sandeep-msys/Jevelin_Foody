@@ -1,0 +1,54 @@
+.Team-container {
+    background-color: #f9f9f9;
+    padding-top: 5%;
+    margin-bottom: 4%;
+
+    .team-heading-container {
+        padding: 0% 3%;
+        text-align: center;
+
+        .team-title {
+            font-family: "Cormorant Garamond";
+            color: #3e3e3e;
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        .team-matter {
+            font-family: 'Montserrat';
+            color: #a6a6a6;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .Team-container {
+        // padding: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .team-heading-container {
+            width: 40%;
+
+            .team-matter {
+                margin-right: 0%;
+                // border: 1px solid red;
+                margin: 0%;
+                padding: 0%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ant-divider-horizontal {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        /* min-width: 30%; */
+        width: 100%;
+    }
+}
